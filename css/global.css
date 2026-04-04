@@ -27,3 +27,65 @@ body, img, h1, p, fieldset, legend, label, input, select, textarea, button {
     box-sizing: border-box;
     font-family: var(--font-sans);
 }
+
+.h1 {
+    font-size: 48px;
+    font-weight: var(--font-bold);
+}
+
+.h2 {
+    font-size: 40px;
+    font-weight: var(--font-bold);
+}
+
+.h3 {
+    font-size: 32px;
+    font-weight: var(--font-bold);
+}
+
+.h4 {
+    font-size: 28px;
+    font-weight: var(--font-bold);
+}
+
+.body-1 {
+    font-size: 16px;
+    font-weight: var(--font-regular);
+    line-height: 1.5;
+}
+
+.body-2 {
+    font-size: 20px;
+    font-weight: var(--font-regular);
+    line-height: 1.5;
+}
+
+.body-2-bold {
+    font-size: 20px;
+    font-weight: var(--font-bold);
+    line-height: 1.5;
+}
+
+.body-3 {
+    font-size: 24px;
+    font-weight: var(--font-regular);
+    line-height: 1.5;
+}
+
+.body-4 {
+    font-size: 32px;
+    font-weight: var(--font-regular);
+    line-height: 1.5;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: var(--font-regular);
+    line-height: 2.0;
+}
+
+@media screen and (max-width: 768px) {
+    .body-4 {
+        font-size: 20px;
+    }
+}
