@@ -1,0 +1,113 @@
+header {
+  font-family: var(--font-sans);
+  font-weight: var(--font-medium);
+  font-size: 24px;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 48px;
+  position: relative;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  display: inline-block;
+}
+
+.lg-mobile {
+  width: 56px;
+  height: 56px;
+}
+
+.lg-desk {
+  display: none;
+}
+
+nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  width: 100%;
+  background-color: var(--black);
+}
+
+.menu-list {
+  list-style: none;
+  padding-left: 48px;
+}
+
+nav ul li {
+  margin-bottom: 16px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--background);
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 32px 60px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .menu-list {
+    padding: 0;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul li {
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 32px 120px;
+  }
+  .lg-mobile {
+    display: none;
+  }
+
+  .lg-desk {
+    display: block;
+    width: 260px;
+    height: 64px;
+  }
+
+  .logo {
+    width: 260px;
+    height: 64px;
+  }
+
+  nav ul li a:hover {
+    color: var(--primary-strong);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header {
+    padding: 32px 160px;
+  }
+}

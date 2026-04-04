@@ -3,10 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/jornada-viagens/css/main.css">
+    <link rel="stylesheet" href="/jornada-viagens/css/main.css" />
     <title>Jornada Viagens</title>
   </head>
   <body>
-    <h1>Teste</h1>
+    <header>
+      <a class="logo" href="index.html" title="Jornada Viagens">
+        <img
+          class="lg-mobile"
+          src="./img/logo-icone-branco.png"
+          alt="Bússola representando a logo do Jornada Viagens"
+        />
+        <img
+          class="lg-desk"
+          src="./img/logo-branco.png"
+          alt="Logo do Jornada Viagens com uma Bússola e ao lado a palavra Jornada"
+        />
+      </a>
+      <div>
+        <label for="menuButton">
+          <img
+            class="menu-button"
+            src="./img/menu.png"
+            alt="Menu hamburguer composto de 3 linhas horizontais"
+          />
+        </label>
+        <input type="checkbox" name="headerMenu" id="menuButton" hidden />
+        <nav>
+          <ul class="menu-list">
+            <li>
+              <a href="blog.html" title="Blog">Blog</a>
+            </li>
+            <li>
+              <a href="pacotes.html" title="Pacotes de viagem"
+                >Pacotes de viagem</a
+              >
+            </li>
+            <li>
+              <a href="contato.html" title="Contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   </body>
 </html>
